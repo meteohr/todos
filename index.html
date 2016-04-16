@@ -1,0 +1,47 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Todos</title>
+        <link rel="stylesheet" href="./styles/pure-min.css">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    <body>
+        <div class="pure-g container">
+            <div class="pure-u-5-5">
+                <h1>
+                    <img class="pure-img title" src="./media/img/title.png" alt="to do list">
+                </h1>
+            </div>
+            <div class="pure-u-5-5">
+                <div class="list-container">
+                    <form class="pure-form todo-form">
+                        <input class="pure-input-1 todo-input" type="text" placeholder="What needs to be done?">
+                    </form>
+                    <ul id="todo-list" class="todo-list">
+                        <li class="todo-item">First Task<img class="todo-item-delete" src="./media/img/close.png" alt="delete"></li>
+                        <li class="todo-item">Second Task<img class="todo-item-delete" src="./media/img/close.png" alt="delete"></li>
+                        <li class="todo-item closed">Third Task<img class="todo-item-delete" src="./media/img/close.png" alt="delete"></li
+                    </ul>
+                    <div class="info-panel">
+                        <span class="todo-counter"></span>
+                        <span class="filter">
+                            <a class="active show-all" href="">all</a> | <a class="show-active" href="">active</a> | <a class="show-completed" href="">completed</a>
+                        </span>
+                        <span class="completed-counter"></span>
+                    </div>
+                </div>                
+            </div>
+            <div class="pure-u-5-5">
+                <p>
+                    drag and drop items to change order<br/>
+                    double click item to change content
+                </p>
+            </div>
+        </div>
+        <script src="./scripts/jquery-1.12.3.min.js"></script>
+        <script src="./scripts/Sortable.min.js"></script>
+        <script src="./scripts/main.js"></script>
+    </body>
+    </html>
